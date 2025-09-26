@@ -1,0 +1,43 @@
+:root {
+    --tg-theme-bg-color: #ffffff; /* Default, will be overridden by Telegram */
+    --tg-theme-text-color: #000000;
+    --tg-theme-button-color: #31b545;
+    --tg-theme-button-text-color: #ffffff;
+    --tg-theme-hint-color: #999999;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+}
+
+.header { text-align: center; margin-bottom: 20px; }
+.grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; }
+
+.fruit-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--tg-theme-secondary-bg-color, #f8f8f8);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.fruit-emoji { font-size: 48px; }
+.fruit-name { font-weight: bold; margin: 8px 0; }
+.fruit-price { color: var(--tg-theme-hint-color); }
+
+.add-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    font-weight: 600;
+    cursor: pointer;
+}
